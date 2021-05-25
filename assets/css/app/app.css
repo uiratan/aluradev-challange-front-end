@@ -1,0 +1,37 @@
+.app {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--branco); 
+}
+
+:root {
+    --azul-300: #5081FB;
+    --azul-200: #7BA4FC;
+    --azul-100: #96B9FD;
+    --azul-escuro: #051D3B; 
+    --branco: #FFFFFF;
+
+    --cor-bg: var(--azul-escuro);
+    --cor-tx: var(--branco);
+    --menu-normal-opac: 0.16;
+    --menu-hover-opac: 0.64;
+    --menu-pressed-opac: 1;
+
+    --gap-colunas: 1rem; 
+
+    --botao-escuro-tx: var(--cor-tx);
+    --botao-escuro-bg: rgba(80, 129, 251, 0.08);
+    --botao-escuro-hover-bg: rgba(80, 129, 251, 0.16)
+    --botao-escuro-pressed-bg: rgba(80, 129, 251, 0.16);
+    --botao-escuro-pressed-bd: 4px solid rgba(80, 129, 251, 0.24);
+    --botao-escuro-focus-bg: rgba(80, 129, 251, 0.24);
+
+    --botao-claro-tx: var(--azul-escuro);
+    --botao-claro-bg: var(--azul-300);
+    --botao-claro-hover-bg: var(--azul-200);
+    --botao-claro-pressed-bg: var(--azul-200);
+    --botao-claro-pressed-bd: 4px solid rgba(80, 129, 251, 0.72);
+    --botao-claro-focus-bg: var(--azul-100);
+
+}

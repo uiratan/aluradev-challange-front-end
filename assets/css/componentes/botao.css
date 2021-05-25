@@ -1,0 +1,64 @@
+.botao {
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+	padding: 15px 0;
+    margin-bottom: 1rem;
+
+    transition: .5s all;
+
+    width: 100%;
+    height: 56px;
+    
+}
+
+.botao-escuro {
+    background: var(--botao-escuro-bg);
+    color: var(--botao-escuro-tx);
+}
+
+.botao-escuro:hover {
+	background: var(--botao-escuro-hover-bg);
+}
+
+.botao-escuro:pressed {
+	background: var(--botao-escuro-pressed-bg);
+    border: var(--botao-escuro-pressed-bd);
+}
+
+.botao-escuro:focus {
+	background: var(--botao-escuro-focus-bg);
+}
+
+
+.botao-claro {
+    background: var(--botao-claro-bg);   
+	color: var(--botao-claro-tx);
+}
+
+.botao-claro:hover {
+    background: var(--botao-claro-hover-bg);
+}
+
+.botao-claro:pressed {
+    background: var(--botao-claro-pressed-bg);
+    border: var(--botao-claro-pressed-bd);
+}
+
+.botao-claro:focus {
+    background: var(--botao-claro-focus-bg);
+}
+
+
+.color-picker {
+    padding: 0;
+    
+    background: var(--cor-bg);
+    border: 1px solid var(--cor-tx);
+    box-sizing: border-box;
+    border-radius: 4px;    
+
+    margin-bottom: 1rem;
+}
+

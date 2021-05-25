@@ -1,0 +1,47 @@
+.tituloSecao {
+    font-size: 0.7rem;
+    letter-spacing: 0.4em;
+
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.menu__item {
+    margin-bottom: 1rem;
+    opacity: var(--menu-normal-opac);
+    transition: .5s all;
+}
+
+.menu__item:hover {
+    opacity: var(--menu-hover-opac);
+}
+
+.menu__item:pressed {
+    
+}
+
+.menu__link {
+    align-items: center;
+    color: var(--cor-tx);
+    display: flex;
+    text-decoration: none;    
+}
+
+.menu__icone { 
+    background: var(--azul-300);
+    border: 1rem solid var(--azul-300);
+    border-radius: 16px;   
+    margin-right: 1rem;
+}
+
+.menu__icone--editor::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f121";
+}
+
+.menu__icone--comunidade::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: "\f0c0";
+}

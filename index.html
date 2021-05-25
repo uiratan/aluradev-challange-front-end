@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Alura Dev | Encontre seu código</title>
+    <link href="./assets/css/app/normalize.css" rel="stylesheet">
+    <link href="./assets/css/app/reset.css" rel="stylesheet">
+    <link href="./assets/css/app/app.css" rel="stylesheet">
+    <link href="./assets/css/app/responsivo.css" rel="stylesheet">
+
+
+    <link href="./assets/css/componentes/inputs.css" rel="stylesheet">
+    <link href="./assets/css/componentes/botao.css" rel="stylesheet">
+    <link href="./assets/css/componentes/editor-codigo.css" rel="stylesheet">
+
+    <link href="./assets/css/cabecalho.css" rel="stylesheet">
+    <link href="./assets/css/menu.css" rel="stylesheet">
+    <link href="./assets/css/conteudo.css" rel="stylesheet">
+
+
+</head>
+
+<body class="app">
+
+    <header class="cabecalho">
+        <img class="cabecalho__logo" src="./assets/img/Logo.svg" alt="">
+
+        <input class="caixaTexto__pesquisa cabecalho__pesquisa" type="text" placeholder="Busque por algo">
+
+        <div class="cabecalho__mobile">
+
+            <div class="cabecalho__lupa">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search"
+                    class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                        d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
+                    </path>
+                </svg>
+            </div>
+
+            <div class="cabecalho__hamburguer">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+                    class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                    </path>
+                </svg>
+            </div>
+
+        </div>
+
+        <div class="cabecalho__perfil">
+            <div class="perfil__avatar perfil__avatar--temp"></div>
+            Usuário
+        </div>
+    </header>
+
+
+    <main class="conteudo">
+
+        <nav class="menu">
+            <h2 class="tituloSecao">
+                Menu
+            </h2>
+
+            <ul>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">
+                        <i class="menu__icone menu__icone--editor"></i>
+                        <p>Editor de código</p>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">
+                        <i class="menu__icone menu__icone--comunidade"></i>
+                        Comunidade
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="projeto">
+            <div class="projetoCard">
+                <div class="projetoCard__janelaSombra">
+                    <div class="projetoCard__botoesDecoracao"></div>
+                    <textarea name="" id="" class="projetoCard__codigo">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                                                        
+const unfold = (f, seed) => {
+    const go = (f, seed, acc) => {
+        const res = f(seed)
+        return res ? go(f, res[1], acc.concat([res[0]])) : acc
+    }
+        return go(f, seed, [])
+}</textarea>
+
+                </div>
+                <input type="submit" value="Visualizar com o highlight" class="botao botao-escuro">
+            </div>            
+        </section>
+
+        <form class="dadosProjeto">
+            <h2 class="tituloSecao"> Seu projeto </h2>
+            <input type="text" class="caixaTexto__padrao" placeholder="Nome do seu projeto">
+
+
+            <textarea name="" id="" class="caixaTexto__padrao caixaTexto__descricao">Descrição do seu projeto</textarea>
+
+            <p></p>
+            <h2 class="tituloSecao"> Personalização </h2>
+
+            <div class="dadosProjeto__personalizacao">
+                <select class="caixaTexto__padrao dadosProjeto__selectItem">
+                    <option class="itemSelecao">JavaScript</option>
+                    <option class="itemSelecao">CSS</option>
+                    <option class="itemSelecao">HTML</option>
+                </select>
+
+                <input type="color" id="favcolor" name="favcolor" value="#6BD1FF"
+                    class="botao color-picker dadosProjeto__selectItem">
+            </div>
+
+            <input type="submit" value="Salvar projeto" class="botao botao-claro">
+
+        </form>
+    </main>
+
+    <footer class="rodape"></footer>
+
+    <script src="https://kit.fontawesome.com/252a618108.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
+
+
+                <!-- <div class="card__corpo">
+                    <p class="card__titulo">Título do projeto</p>
+                    <p class="card__descricao">Essa é a descrição do meu projeto.</p>
+                </div> -->
